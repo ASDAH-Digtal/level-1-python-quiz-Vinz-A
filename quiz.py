@@ -13,7 +13,7 @@ else:
     print("I will take that as a yes")
 
 score = 0 
-q1 = input("Question 1: Which of these is NOT one of the breathing forms?\na) Water\nb) Gravity\nc) Sound\nd) Wind\n>>") 
+q1 = input("Question 1: Which of these is NOT one of the breathing forms? (By the way if you are just putting the letter make it lowercase)\na) Water\nb) Gravity\nc) Sound\nd) Wind\n>>") 
 
 if q1 == "Gravity" or q1 == "b" or q1 == "gravity":
     score += 1
