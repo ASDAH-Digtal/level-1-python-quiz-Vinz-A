@@ -1,9 +1,9 @@
 from tkinter.messagebox import YES
 
-#Introduction
+# Introduction
 print("This quiz is about Demon Slayer this is multiple choice. Choose one of the options and you will get points if you are correct. Then we will start the quiz, Are You ready?")
 
-#Are you ready question
+# Are you ready question
 ready = input("\na) Yes\nb) No\n>>")
 
 if ready == "Yes" or ready == "a" or ready == "yes":
@@ -14,7 +14,7 @@ else:
     print("I will take that as a yes")
 
 
-#Questions 1-12
+# Questions 1-12
 score = 0 
 q1 = input("Question 1: Which of these is NOT one of the breathing forms? (By the way if you are just putting the letter make it lowercase)\na) Water\nb) Gravity\nc) Sound\nd) Wind\n>>") 
 
@@ -111,7 +111,7 @@ if q12 == "1" or "a":
 else:
     print("Incorrect")
 
-#Finalise score
+# Finalise score
 if str(score) == "12":
     print("You are Amazing, You really know your things")
 
