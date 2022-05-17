@@ -6,9 +6,9 @@ print("This quiz is about Demon Slayer this is multiple choice. Choose one of th
 # Are you ready question
 ready = input("\na) Yes\nb) No\n>>")
 
-if ready == "Yes" or ready == "a" or ready == "yes":
+if ready == "Yes" or "a" or "yes" or "A":
     print("Good, Lets start")
-elif ready == "No" or ready == "b" or ready == "no":
+elif ready == "No" or "b" or "no" or "B":
     print("Too bad, Lets start")
 else:
     print("I will take that as a yes")
@@ -16,101 +16,130 @@ else:
 
 # Questions 1-12
 score = 0 
-q1 = input("Question 1: Which of these is NOT one of the breathing forms? (By the way just put the letter)\na) Water\nb) Gravity\nc) Sound\nd) Wind\n>>") 
+q1 = input("Question 1: Which of these is NOT one of the breathing forms? (By the way just put ONLY the letter in lowercase)\na) Water\nb) Gravity\nc) Sound\nd) Wind\n>>") 
 
-if q1 == "b":
+#Need to Fix the loop
+continuing = True
+while(continuing):
+
+ if q1 == "b":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif q1 == "a" or q1 == "c" or q1 == "d":
-    print("Incorrct")
+    continuing = False
+ elif q1 == "a" or "c" or "d":
+    print("Incorrect")
+    continuing = False
+ else:
+    print("Invaid answer, try again")
 
-q2 = input("Question 2: What is the name of the main antagonist?\na) Akaza\nb) Nezuko\nc) Muzan\nd) Michael Jackson\n>>") 
+q2 = input("Question 2: What is the name of the main antagonist? (By the way just put ONLY the letter in lowercase)\na) Akaza\nb) Nezuko\nc) Muzan\nd) Michael Jackson\n>>") 
 
 if  q2 == "c":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q2 == "a" or "b" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q3 = input("Question 3: What is the name of the yellow-haired boy?\na) Tanjiro\nb) Nezuko\nc) Inosuke\nd) Zenistu\n>>")  
+q3 = input("Question 3: What is the name of the yellow-haired boy? (By the way just put ONLY the letter in lowercase)\na) Tanjiro\nb) Nezuko\nc) Inosuke\nd) Zenistu\n>>")  
 
 if  q3 == "d":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q3 == "a" or "b" or "c":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q4 = input("Question 4: What breathing form does Rengoku use?\na) Water\nb) Earth\nc) Fire\nd) Air\n>>")
+q4 = input("Question 4: What breathing form does Rengoku use? (By the way just put ONLY the letter in lowercase)\na) Water\nb) Earth\nc) Fire\nd) Air\n>>")
 
 if  q4 == "c":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q4 == "a" or "b" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q5 = input("Question 5: What do demons have?\na) Regeneration\nb) Fire Resistance\nc) Love\nd) Nothing\n>>")
+q5 = input("Question 5: What do demons have? (By the way just put ONLY the letter in lowercase)\na) Regeneration\nb) Fire Resistance\nc) Love\nd) Nothing\n>>")
 
-if  q5 == "a" :
+if  q5 == "a":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q5 == "b" or "c" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q6 = input ("Question 6: Who is the most powerful Demon slayer?\na) Tanjiro\nb) Muzan\nc) Gyomei\nd) Yorrichi\n>>")  
+q6 = input ("Question 6: Who is the most powerful Demon slayer? (By the way just put ONLY the letter in lowercase)\na) Tanjiro\nb) Muzan\nc) Gyomei\nd) Yorrichi\n>>")  
 
-if  q6 == "d" :
+if  q6 == "d":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q6 == "a" or "b" or "c":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q7 = input("Question 7: Which is the most powerful Hashira?\na) Shinobu\nb) Gyomei\nc) Rengoku\nd) Giyu\n>>")
-if  q7 == "b" :
+q7 = input("Question 7: Which is the most powerful Hashira? (By the way just put ONLY the letter in lowercase)\na) Shinobu\nb) Gyomei\nc) Rengoku\nd) Giyu\n>>")
+if  q7 == "b":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q7 == "a" or "c" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q8 = input("Question 8: What year was the Demon slayer movie released in?\na) 2018\nb) 2019\nc) 2020\nd) 2021\n>>")  
+q8 = input("Question 8: What year was the Demon slayer movie released in? (By the way just put ONLY the letter in lowercase)\na) 2018\nb) 2019\nc) 2020\nd) 2021\n>>")  
 
-if q8 == "2020" or q8 == "c":
+if q8 == "c":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q8 == "a" or "b" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q9 = input("Question 9: Which of these is the most powerful demon?\na) Kokushibo\nb) Akaza\nc) Douma\nd) Daki\n>>")
+q9 = input("Question 9: Which of these is the most powerful demon? (By the way just put ONLY the letter in lowercase)\na) Kokushibo\nb) Akaza\nc) Douma\nd) Daki\n>>")
 
-if  q9 == "a" :
+if  q9 == "a":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q9 == "b" or "c" or "d":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q10 = input("Question 10: What are demons scared of?\na) Homework\nb) Grass\nc) Wifi\nd) Sunlight\n>>")
+q10 = input("Question 10: What are demons scared of? (By the way just put ONLY the letter in lowercase)\na) Homework\nb) Grass\nc) Wifi\nd) Sunlight\n>>")
 
-if  q10 == "d" :
+if  q10 == "d":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q10 == "a" or "b" or "c":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q11 = input("Question 11: Do demons talk?\na) Yes\nb) No\nc) Spanish\nd) Ancient Demonic Language\n>>")  
+q11 = input("Question 11: Do demons talk? (By the way just put ONLY the letter in lowercase)\na) Yes\nb) No\nc) Spanish\nd) Ancient Demonic Language\n>>")  
 
 if  q11 == "a" :
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q11 == "b" or "c" or "d:":
     print("Incorrect")
+else:
+    print("Invaid answer, try again")
 
-q12 = input("Final question: How many Wives does Tengan Uzui have?\na) 1\nb) 2\nc) 3\nd) 4\n>>") 
+q12 = input("Final question: How many Wives does Tengan Uzui have? (By the way just put ONLY the letter in lowercase)\na) 1\nb) 2\nc) 3\nd) 4\n>>") 
 
 if q12 == "1" or "a":
     score += 1
     print("Correct\nTotal Score: " + str(score))
-elif:
+elif q12 == "b" or "c" or "d":
     print("Incorrect")
-
+else:
+    print("Invaid answer, try again")
 # Finalise score
 if str(score) == "12":
     print("You are Amazing, You really know your things")
